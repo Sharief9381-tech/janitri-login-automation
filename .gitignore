@@ -1,2 +1,7 @@
-.vscode/
+target/
 *.log
+.idea/
+*.iml
+.vscode/
+chromedriver
+*.deb
