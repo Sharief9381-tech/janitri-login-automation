@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 1, Errors: 0, Skipped: 11, Time elapsed: 1.870 s <<< FAILURE! -- in TestSuite
-com.janitri.tests.LoginTests.setUp -- Time elapsed: 1.600 s <<< FAILURE!
+Tests run: 12, Failures: 1, Errors: 0, Skipped: 11, Time elapsed: 1.753 s <<< FAILURE! -- in TestSuite
+com.janitri.tests.LoginTests.setUp -- Time elapsed: 1.485 s <<< FAILURE!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir 
 Host info: host: 'codespaces-4dff2b', ip: '127.0.0.1'
