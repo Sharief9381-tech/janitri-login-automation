@@ -9,8 +9,8 @@ public class LoginPage {
     private WebDriver driver;
 
     // Locators
-    @FindBy(id = "email") // Adjust ID based on actual page
-    private WebElement emailInput;
+   @FindBy(id = "userEmail")
+private WebElement emailInput;
 
     @FindBy(id = "password") // Adjust ID based on actual page
     private WebElement passwordInput;
