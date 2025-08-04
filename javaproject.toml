@@ -1,0 +1,93 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Metadata -->
+  <groupId>io.seleniumbase</groupId>
+  <artifactId>seleniumbase</artifactId>
+  <version>1.0.0</version>
+  <name>SeleniumBase</name>
+  <description>A complete framework for end-to-end testing with Java (converted from Python SeleniumBase)</description>
+  <url>https://seleniumbase.io</url>
+
+  <!-- Project URLs -->
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://github.com/seleniumbase/SeleniumBase/blob/master/LICENSE</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>michaelmintz</id>
+      <name>Michael Mintz</name>
+      <email>contact@seleniumbase.com</email>
+    </developer>
+  </developers>
+
+  <scm>
+    <url>https://github.com/seleniumbase/SeleniumBase</url>
+    <connection>scm:git:git://github.com/seleniumbase/SeleniumBase.git</connection>
+    <developerConnection>scm:git:ssh://github.com:seleniumbase/SeleniumBase.git</developerConnection>
+  </scm>
+
+  <!-- Build Plugins -->
+  <build>
+    <plugins>
+      <!-- Compiler plugin -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <source>17</source>
+          <target>17</target>
+        </configuration>
+      </plugin>
+
+      <!-- Surefire for test running -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.5</version>
+        <configuration>
+          <includes>
+            <include>**/*Test.java</include>
+          </includes>
+          <testFailureIgnore>false</testFailureIgnore>
+        </configuration>
+      </plugin>
+
+      <!-- Javadoc plugin (if you want docs like `README.md`) -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.6.3</version>
+      </plugin>
+    </plugins>
+  </build>
+
+  <!-- Dependencies -->
+  <dependencies>
+    <!-- Selenium -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.21.0</version>
+    </dependency>
+
+    <!-- TestNG -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.10.2</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Add others as needed -->
+  </dependencies>
+</project>
