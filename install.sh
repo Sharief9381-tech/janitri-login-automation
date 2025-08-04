@@ -1,2 +1,6 @@
-#!/usr/bin/env bash
-pip install -e . --use-pep517 --config-settings="editable_mode=compat"
+mvn install
+<dependency>
+  <groupId>com.example</groupId>
+  <artifactId>my-utils</artifactId>
+  <version>1.0-SNAPSHOT</version>
+</dependency>
